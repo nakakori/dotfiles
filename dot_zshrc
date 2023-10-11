@@ -1,0 +1,10 @@
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+eval "$(starship init zsh)"
+
+. /home/linuxbrew/.linuxbrew/opt/asdf/libexec/asdf.sh
+
+alias relogin='exec $SHELL -l'
+alias ll='ls -la'
+
+export PATH=$PATH:/home/nakakori/.cargo/bin
+export PATH="$PATH:$(go env GOPATH)/bin"
