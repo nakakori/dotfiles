@@ -1,6 +1,5 @@
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 eval "$(sheldon source)"
-eval "$(starship init zsh)"
 
 . /home/linuxbrew/.linuxbrew/opt/asdf/libexec/asdf.sh
 
@@ -9,3 +8,5 @@ alias ll='ls -la'
 
 export PATH=$PATH:/home/nakakori/.cargo/bin
 export PATH="$PATH:$(go env GOPATH)/bin"
+
+autoload -Uz compinit && compinit
