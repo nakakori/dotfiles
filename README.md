@@ -1,5 +1,7 @@
 # README.md
 
+nakakori's dotfiles managed by [chezmoi.io](https://chezmoi.io)
+
 ## Install
 
 - hoge
