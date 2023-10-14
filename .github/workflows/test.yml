@@ -27,4 +27,7 @@ jobs:
 
       # Install dotfiles
       - name: Install dotfiles
-        run: sh -c "$(curl -fsLS chezmoi.io/get)" -- init --apply -S .
+        shell: zsh {0}
+        run: |
+          echo $ZSH_NAME $ZSH_VERSION
+          sh -c "$(curl -fsLS chezmoi.io/get)" -- init --apply -S .
